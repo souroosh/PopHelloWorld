@@ -16,7 +16,7 @@ And then follow the instructions on the screen.
 If you wish to try the advanced example, you'll have to create a MySQL database
 and either use the database name and credentials from the install file, or create
 your own and set the new database name and credentials correctly in the install
-file. From there, from the script/ folder, you can run:
+file. Then, from the script/ folder, you can run:
 
 <pre>
 ./pop -i hw-advanced/project.install.php
