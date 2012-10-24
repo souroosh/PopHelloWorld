@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Home : Hello World! : Pop PHP Framework Example Application
+    </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="http://www.popphp.org/img/popphp.ico" type="image/ico" />
+
+    <style type="text/css">
+        html {
+            margin: 0;
+            padding: 0;
+            background-color: #ccc;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: arial, helvetica, verdana, sans-serif;
+            font-size: 0.75em;
+            color: #666;
+        }
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #ce5502;
+        }
+        a:hover {
+            font-weight: bold;
+            text-decoration: underline;
+            color: #119ddf;
+        }
+        h3 {
+            margin: 0 0 20px 0;
+            padding: 0;
+            font-size: 2.2em;
+            font-weight: normal;
+            color: #333;
+        }
+        h4 {
+            margin: 0 0 15px 0;
+            padding: 0;
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #333;
+        }
+        p {
+            margin: 0 0 20px 0;
+            padding: 0;
+            line-height: 1.8em;
+        }
+        #content {
+            margin: 60px auto 60px auto;
+            padding: 20px 0 20px 0;
+            width: 980px;
+            min-height: 600px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 0px 6px 6px #aaa;
+        }
+        #header-nav {
+            margin: 0 20px 20px 0;
+            padding: 0;
+            float: right;
+        }
+        #header-nav li {
+            margin: 0;
+            padding: 0 7px 0 7px;
+            font-weight: bold;
+            display: inline;
+        }
+        #main-nav {
+            clear: right;
+            margin: 0 auto;
+            padding: 0 20px 0 20px;
+            width: 940px;
+            height: 30px;
+            background-color: #085172;
+        }
+        #main-nav li {
+            margin: 0;
+            padding: 0 7px 0 7px;
+            display: inline;
+        }
+        #main-nav a {
+            margin: 0 12px 0 12px;
+            padding: 8px 20px 10px 20px;
+            color: #fff;
+            height: 12px;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: block;
+            float: left;
+        }
+        #main-nav a:hover {
+            background-color: #0a79ae;
+            text-decoration: underline;
+        }
+        #header {
+            margin: 0 auto;
+            padding: 20px 50px 20px 40px;
+            width: 890px;
+            height: 100px;
+            text-align: right;
+            background-color: #0a79ae;
+            overflow: auto;
+        }
+        #header h1 {
+            margin: 10px 0 0 0;
+            padding: 0;
+            font-size: 4.0em;
+            font-weight: normal;
+            color: #fff;
+            text-shadow: #000 2px 2px 2px;
+        }
+        #header h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 2.2em;
+            font-weight: normal;
+            color: #fff;
+            text-shadow: #000 2px 2px 2px;
+        }
+        #content-area {
+            margin: 40px auto 40px auto;
+            padding: 0;
+            width: 850px;
+        }
+        #sub-nav {
+            margin: 0 0 20px 0;
+            padding: 8px 0 8px 0;
+            width: 100%;
+            border-top: dotted 1px #ccc;
+            border-bottom: dotted 1px #ccc;
+        }
+        #sub-nav li {
+            margin: 0;
+            padding: 0 8px 0 8px;
+            font-weight: bold;
+            display: inline;
+        }
+        .home {
+            margin: 0 0 0 10px;
+            padding: 0;
+            width: 200px;
+            height: 200px;
+            float: left;
+            display: block;
+        }
+        .nav-on {
+            background-color: #0a79ae;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+<div id="content">
+    <ul id="header-nav">
+        <li><a href="http://www.popphp.org/" target="_blank">Pop PHP Website</a></li>
+        <li>:</li>
+        <li><a href="https://github.com/nicksagona/PopPHP" target="_blank">Pop PHP GitHub</a></li>
+    </ul>
+    <ul id="main-nav">
+        <li><a href="/admin">Admin Home</a></li>
+        <li><a class="nav-on" href="/admin/users">Users</a></li>
+    </ul>
+    <div id="header">
+        <h1>Hello World : Admin Area</h1>
+        <h2>Pop PHP Framework Example Application</h2>
+    </div>
+    <div id="content-area">
+        <h3>This is the Admin Users Page</h3>
+        <ul id="sub-nav">
+            <li><a href="/admin/users/add">Add</a></li>
+            <li>:</li>
+            <li><a href="/admin/users/edit">Edit</a></li>
+            <li>:</li>
+            <li><a href="/admin/users/remove">Remove</a></li>
+        </ul>
+        <h4>Add a User</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin volutpat. Maecenas laoreet tempus quam. Maecenas faucibus semper leo. Nullam sit amet felis. Integer luctus interdum lacus. Vestibulum pulvinar, nunc a fermentum eleifend, dui ipsum condimentum urna, at hendrerit lacus mi elementum tortor. Maecenas lacus. Nunc varius. Duis malesuada. Vivamus facilisis quam et diam. Curabitur augue. Phasellus eros.
+        </p>
+        <p>
+            Aliquam velit massa, ultricies sit amet, facilisis vitae, placerat vitae, justo. Pellentesque tortor orci, ornare a, consequat ut, mollis et, nisl. Suspendisse sem metus, convallis nec, fermentum sed, varius at, metus. Pellentesque ullamcorper diam eget urna. Aliquam risus risus, imperdiet sit amet, elementum nec, pellentesque vel, justo.
+        </p>
+    </div>
+</div>
+</body>
+
+</html>
