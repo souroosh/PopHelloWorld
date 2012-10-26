@@ -141,13 +141,15 @@
 <body>
 <div id="content">
     <ul id="header-nav">
+        <li><a href="<?php echo defined('BASE_URI') ? BASE_URI : null; ?>/">Main Website</a></li>
+        <li>:</li>
         <li><a href="http://www.popphp.org/" target="_blank">Pop PHP Website</a></li>
         <li>:</li>
         <li><a href="https://github.com/nicksagona/PopPHP" target="_blank">Pop PHP GitHub</a></li>
     </ul>
     <ul id="main-nav">
-        <li><a class="nav-on" href="/admin">Admin Home</a></li>
-        <li><a href="/admin/users">Users</a></li>
+        <li><a class="nav-on" href="<?php echo defined('BASE_URI') ? BASE_URI : null; ?>/admin">Admin Home</a></li>
+        <li><a href="<?php echo defined('BASE_URI') ? BASE_URI : null; ?>/admin/users">Users</a></li>
     </ul>
     <div id="header">
         <h1>Hello World : Admin Area</h1>

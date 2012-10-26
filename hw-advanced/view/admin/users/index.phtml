@@ -154,13 +154,15 @@
 <body>
 <div id="content">
     <ul id="header-nav">
+        <li><a href="<?php echo defined('BASE_URI') ? BASE_URI : null; ?>/">Main Website</a></li>
+        <li>:</li>
         <li><a href="http://www.popphp.org/" target="_blank">Pop PHP Website</a></li>
         <li>:</li>
         <li><a href="https://github.com/nicksagona/PopPHP" target="_blank">Pop PHP GitHub</a></li>
     </ul>
     <ul id="main-nav">
-        <li><a href="/admin">Admin Home</a></li>
-        <li><a class="nav-on" href="/admin/users">Users</a></li>
+        <li><a href="<?php echo defined('BASE_URI') ? BASE_URI : null; ?>/admin">Admin Home</a></li>
+        <li><a class="nav-on" href="<?php echo defined('BASE_URI') ? BASE_URI : null; ?>/admin/users">Users</a></li>
     </ul>
     <div id="header">
         <h1>Hello World : Admin Area</h1>
@@ -169,11 +171,11 @@
     <div id="content-area">
         <h3>This is the Admin Users Page</h3>
         <ul id="sub-nav">
-            <li><a href="/admin/users/add">Add</a></li>
+            <li><a href="<?php echo defined('BASE_URI') ? BASE_URI : null; ?>/admin/users/add">Add</a></li>
             <li>:</li>
-            <li><a href="/admin/users/edit">Edit</a></li>
+            <li><a href="<?php echo defined('BASE_URI') ? BASE_URI : null; ?>/admin/users/edit">Edit</a></li>
             <li>:</li>
-            <li><a href="/admin/users/remove">Remove</a></li>
+            <li><a href="<?php echo defined('BASE_URI') ? BASE_URI : null; ?>/admin/users/remove">Remove</a></li>
         </ul>
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin volutpat. Maecenas laoreet tempus quam. Maecenas faucibus semper leo. Nullam sit amet felis. Integer luctus interdum lacus. Vestibulum pulvinar, nunc a fermentum eleifend, dui ipsum condimentum urna, at hendrerit lacus mi elementum tortor. Maecenas lacus. Nunc varius. Duis malesuada. Vivamus facilisis quam et diam. Curabitur augue. Phasellus eros.
