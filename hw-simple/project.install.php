@@ -26,28 +26,23 @@ return new Pop\Config(array(
     ),
     'forms' => array(
         'login' => array(
-            'fields' => array(
-                array(
-                    'type'       => 'text',
-                    'name'       => 'username',
-                    'label'      => 'Username:',
-                    'required'   => true,
-                    'attributes' => array('size', 40),
-                    'validators' => 'AlphaNumeric()'
-                ),
-                array(
-                    'type'       => 'password',
-                    'name'       => 'password',
-                    'label'      => 'Password:',
-                    'required'   => true,
-                    'attributes' => array('size', 40),
-                    'validators' => array('NotEmpty()', 'LengthGt(6)')
-                ),
-                array(
-                    'type'       => 'submit',
-                    'name'       => 'submit',
-                    'value'      => 'LOGIN'
-                )
+            'username' => array(
+                'type'       => 'text',
+                'label'      => 'Username:',
+                'required'   => true,
+                'attributes' => array('size' => 40),
+                'validators' => 'AlphaNumeric()'
+            ),
+            'password' => array(
+                'type'       => 'password',
+                'label'      => 'Password:',
+                'required'   => true,
+                'attributes' => array('size' => 40),
+                'validators' => array('NotEmpty()', 'LengthGt(6)')
+            ),
+            'submit' => array(
+                'type'       => 'submit',
+                'value'      => 'LOGIN'
             )
         )
     ),
